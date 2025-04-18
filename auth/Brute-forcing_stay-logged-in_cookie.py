@@ -19,11 +19,11 @@ import os
 print("Current working directory:", os.getcwd())
 print("Files in current directory:", os.listdir('.'))
 
-if not os.path.exists("auth/wordlistCookie.txt"):
+if not os.path.exists("portswigger_Labs_corr/auth/wordlistCookie.txt"):
     print("[-] File not found. Did you put it in the right folder?")
     exit(1)
 
-with open("auth/wordlistCookie.txt", "r") as f:
+with open("portswigger_Labs_corr/auth/wordlistCookie.txt", "r") as f:
     for password in f:
         password = password.strip()
         hashed = hashlib.md5(password.encode()).hexdigest()
