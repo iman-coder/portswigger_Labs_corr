@@ -1,11 +1,11 @@
 import requests
 
 # Replace with the full URL of the lab
-url = "https://0ac200fe041f4561805653e4000b002c.web-security-academy.net/login2"
+url = "[Given_URL]/login2"
 
 # Optional: carry cookies from your own login (your session)
 cookies = {
-    "session": "xkcLJf2n3KhQZETmtAB77eADEQaZmONv",
+    "session": "[SESSION]",
     "verify": "carlos"
 }
 
